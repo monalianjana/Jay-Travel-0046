@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"/>
+  </head>
+
+  <style>
+
+.navbar-brand{
+        letter-spacing: 2px;
+        color: rgb(204, 97, 10);
+        font-size: 30px;
+        padding-top: 1px;
+        font-family: 'Carlito 700', sans-serif;
+        
+    }
+    .navbar{
+        height:50px;
+        padding-top: 0px;
+    }
+    .nav-link.active{
+        color:rgb(204, 97, 10) !important;
+        
+    }
+    .nav-link{
+        color: rgb(255, 255, 255);
+        transition:ease-in-out;
+    }
+    .navbar a:hover{
+        color: rgb(204, 97, 10);
+    }
+    .navbar a:active{
+        color: rgb(204, 97, 10);
+        
+    }
+
+    
+body{
+  background-color: #eabea1;
+  background-image: linear-gradient(90deg, #fcf0c2 0%, #ebc5b0 100%);
+  
+
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  padding-top: 55px;
+}
+
+.about-container p {
+  line-height: 2;
+  padding: 0 20px;
+}
+
+.about-container .profile-image {
+  text-align: center;
+  padding: 30px;
+  background-color: #12192c;
+  border-radius:12px 12px 0 0;
+}
+
+.about-container .profile-image img {
+  width: 200px;
+  border-radius: 50px;
+  padding: 8px;
+}
+.description{
+  position: relative;
+  background-color: #12192c;
+  padding: 20px 20px 60px 20px;
+  border-radius:0 0 12px 12px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+  color:#fff
+}
+.projects-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+  max-width: 550px;
+  margin: -64px auto;
+  border-radius: 20px;
+  background-color: #fff;
+  border:5px solid #12192c
+}
+
+.projects-container .project {
+  height: 160px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.projects-container .project-name {
+  font-size: 16px;
+}
+
+.projects-container .project-number {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.our-team-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 64px;
+}
+
+.our-team {
+  display: flex;
+  padding: 30px;
+}
+
+.our-team img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+}
+
+.our-team .team-member {
+  margin: 0 4px;
+  position: relative;
+}
+
+.our-team .designation {
+  position: absolute;
+  bottom: 30px;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+.about-container .our-mission {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-container .our-mission .quote-icon {
+  position: absolute;
+  opacity: 0.2;
+  height: 80px;
+}
+
+.about-container .our-mission p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .our-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-team img {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+  }
+}
+.credit{
+    text-align: center;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credit a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}  
+
+
+
+  </style>
+
+  <body>
+  
+       <!-- HEADER -->
+
+  <body>
+    <header class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar fixed-top bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" "><b>JAY TOURS</b></a>
+                      <div class="navbar-nav" style="flex-direction: row;">
+                        <a class="nav-link ms-4"  href="index.html">HOME</a>
+                        <a class="nav-link ms-4" href="about.html">ABOUT</a>
+                        <a class="nav-link ms-4" href="services.html">SERVICES</a>
+                        <a class="nav-link ms-4" href="testimonial.html">TESTIMONIAL</a>
+                        <a class="nav-link ms-4" href="portfolio.html">PORTFOLIO</a>
+                        <a class="nav-link ms-4" href="contactus.html">CONTACTS</a>
+                      </div>
+                    </div>
+                  </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="about-container">
+      <div class="profile-image">
+        <img src="/Images/Images/company_logo.png" alt="" />
+      </div>
+
+      <div class="description">
+        <h3>Our Vision <p style="font-size: 15px;">Our vision is to become the global leader in personalised, bespoke tours. Together with our professional, friendly staff we are on the fastest track towards this.</p></h3> 
+         <h3>Our Mission</h3><p>Our mission at JAY TOURS Travels is to create a memorable, personalised holiday experience for anyone who entrusts us with their vacation. As part of our growth, we also intend on adding more holiday destinations to our list; which will enable us to serve a larger client base.</p>
+        <h3>The Team & Dedication</h3><p>Our dynamic and determined team consists of 200 staff members, located around the world in several of our key offices. At JAY TOURS Travels, our team is our pride and our greatest prize. Our representatives are professional, friendly, energetic and dedicated and will always greet our customers with a genuine, heart-warming smile!</p>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <h3 class="project-name">Clients</h3>
+          <div class="project-number  websites-designed">250k+</div>
+        </div>
+
+        <div class="project">
+          <h3 class="project-name">Weekly Reservations</h3>
+          <div class="project-number odometer apps-developed">800</div>
+        </div>
+      </div>
+
+      <h2 class="our-team-heading">Our Team</h2>
+
+      <div class="our-team">
+        <div class="team-member">
+          <img src="/Images/Images/Team Leaders/Hugo Silva.jpg" alt="" />
+          <div class="designation">
+            <strong>Hugo Silva</strong> (CEO & Founder)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="/Images/Images/Team Leaders/Imanoli Arias.jpg" alt="" />
+          <div class="designation">
+            <strong>Imonoli Arias</strong> (Executive Manager)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="/Images/Images/Team Leaders/Javier Bardem.jpg" alt="" />
+          <div class="designation">
+            <strong>Javier Bardem</strong> (Managing Director)
+          </div>
+        </div>
+      </div>
+
+      <div class="our-mission">
+        <p><q>Our mission is to provide the best services to our clients.</q></p>
+      </div>
+    </div>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+ <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

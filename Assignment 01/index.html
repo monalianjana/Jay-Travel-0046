@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;500;700&family=Rubik:wght@500&family=Ysabeau:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="page"" href="/about.html"/>
+    <!-- <script src="JSFormValidation.js"></script> -->
+  </head>
+
+  <style>
+    body{
+        overflow-x: hidden;
+    }
+    .navbar-brand{
+        letter-spacing: 2px;
+        color: rgb(204, 97, 10);
+        font-size: 30px;
+        padding-top: 1px;
+        font-family: 'Carlito 700', sans-serif;
+        
+    }
+    .navbar{
+        height:50px;
+        padding-top: 0px;
+    }
+    .nav-link.active{
+        color:rgb(204, 97, 10) !important;
+        
+    }
+    .nav-link{
+        color: rgb(255, 255, 255);
+        transition:ease-in-out;
+    }
+    .navbar a:hover{
+        color: rgb(204, 97, 10);
+    }
+    .navbar a:active{
+        color: rgb(204, 97, 10);
+        
+    }
+    .background-image{
+        height: 500px;
+        background-image: url(Images/Images/main.jpg);
+        background-size: cover;
+    }
+    .destination{
+        color: rgb(204, 97, 10);
+    }
+    .card img{
+        height: 120px;
+        width: 200px;
+        
+    }
+    .countries{
+        color: grey;
+    }
+    .card.leads{
+        height: 350px;
+        width: 240px;
+        margin-left: 60px;
+        
+    }
+    .leads img{
+        height:350px ;
+        width: 240px;
+        object-fit: cover;
+    }
+    .info{
+        height: 200px;
+        background-color: rgb(18, 35, 56);
+    }
+    .clients{
+        color:rgb(204, 97, 10) ;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 50px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .comment{
+        color: whitesmoke;
+        text-align: center;
+    }
+    .card-body{
+        background-color: white;
+        line-height: 1.5;
+
+    }
+    .more{
+        background-color: white;
+        color: rgb(63, 63, 164);
+        border-color: white;
+    }
+
+    button{
+        background-color: white;
+        border-color: white;
+        color: rgb(28, 119, 176);
+    }
+    .container-form {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: 465px;
+        width: 500px;
+        
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    input {
+        height: 50px;
+        border: 2px solid #e1dede69;
+        border-radius: 5px;
+        color: black;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        
+    }
+    
+    .form-item-username {
+        margin: 5px;
+        display: flex;
+        padding-bottom: 10px;
+    }
+    
+    .form-item-username input {
+        width: 150px;
+        margin: 0 5px;
+    }
+    
+    .form-item {
+        margin: 0 auto;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        
+    }
+    
+    .form-item input {
+        margin: 5px;
+        width: 100%;
+    }
+    
+    .accept-box {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    a:hover {
+        color: grey
+    }
+    
+    .form-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .form-btns button {
+        margin: auto;
+        font-size: 20px;
+        padding: 8px;
+        width: 280px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        background: #3b7fc3;
+    }
+    
+    
+    
+    .form-btns button:hover {
+        background: #34b2e4;
+        color: antiquewhite;
+    }
+    
+    .options {
+        padding-top: 15px;
+        margin: auto;
+        font-size: 13px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+ 
+    .footer-info{
+        background-color: #0c0f37;
+        color: white;
+        height: 200px;
+        padding-top: 50px;
+        text-decoration: none;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    
+    .copyright{
+        background-color: #150000; 
+        height: 50px; 
+        color: whitesmoke;
+        padding-top: 18px;
+        
+
+    }
+    /* .fa-phone{
+        text-align: left;
+        
+    }
+    .fa-location-dot{
+
+        text-align: right;
+    } */
+    /* .fa-solid.fa-phone{
+        text-align:left ;
+    } */
+    .tel{
+        font-family:'Times New Roman', Times, serif;
+        padding-top: 10;
+        font-size: 11px;
+    }
+        
+  </style>
+   
+   <!-- HEADER -->
+
+  <body>
+    <header class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar fixed-top bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" "><b>JAY TOURS</b></a>
+                      <div class="navbar-nav" style="flex-direction: row; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        <a class="nav-link ms-4"  href="index.html">HOME</a>
+                        <a class="nav-link ms-4" href="about.html">ABOUT</a>
+                        <a class="nav-link ms-4" href="services.html">SERVICES</a>
+                        <a class="nav-link ms-4" href="testimonial.html">TESTIMONIAL</a>
+                        <a class="nav-link ms-4" href="portfolio.html">PORTFOLIO</a>
+                        <a class="nav-link ms-4" href="contactus.html">CONTACTS</a>
+                      </div>
+                    </div>
+                  </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- COVER PHOTO -->
+
+    <section class="container-fluid" id="home">
+        <div class="row">
+            <div class="col-md-12 background-image">
+               
+            </div>
+        </div>
+    </section><br>
+
+    <!-- Top Destinations -->
+
+    <section class="container-fluid">
+        <div class="row">
+            <h1 class="destination text-center"">TOP DESTINATIONS</h1><br><br><br>
+            <div class="col-1"></div>
+            <div class="col-md-2 ">
+                <h5 class="countries text-center">SRI LANKA</h5>
+                <div class="card">
+                    <img src="Images/Images/Top Destinations/Sri Lanka.jpg" alt="">
+                </div>
+            </div> 
+            <div class="col-md-2">
+                <h5 class="countries text-center">ROME</h5>
+                <div class="card">
+                    <img src="Images/Images/Top Destinations/Rome.jpg" alt="">
+                </div>
+            </div> 
+            <div class="col-md-2">
+                <h5 class="countries text-center">MALDIVES</h5>
+                <div class="card">
+                    <img src="Images/Images/Maldives.jpg" alt="">
+                </div>
+            </div> 
+            <div class="col-md-2">
+                <h5 class="countries text-center">SWITSZERLAND</h5>
+                <div class="card">
+                    <img src="Images/Images/Top Destinations/Switzerland.jpg" alt="">
+                </div>
+            </div> 
+            <div class="col-md-2">
+                <h5 class="countries text-center">THAILAND</h5>
+                <div class="card">
+                    <img src="Images/Images/Top Destinations/Thailand.jpg" alt="">
+                </div>
+            </div> 
+            <div class="col-1"></div>
+        </div>
+    </section><br><br>
+
+    <!-- TEAM LEADS -->
+
+    <section class="container" >
+        <div class="row">
+            <h1 class="destination text-center"">OUR TEAM LEADS</h1><br>
+            <p class="description text-center">Lorem ipsum dolor sit amet consectetur adipisicing Voluptate eligendi mollitia odio<br> cupiditate ab labore cum culpa aut quibusdam dolore illum perferendis error blanditiis<br> quia tempora voluptatem? Autem, voluptates iste!</p>
+            <div class="col-md-4">
+                <div class="card leads">
+                    <img src="Images/Images/Team Leaders/Hugo Silva.jpg" alt="">
+                </div>
+                <h4 class="name text-center">Hugo Silva</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="card leads">
+                    <img src="/Images/Images/Team Leaders/Imanoli Arias.jpg" alt="">
+                </div>
+                <h4 class="name text-center">Imanoli Arias</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="card leads">
+                    <img src="/Images/Images/Team Leaders/Javier Bardem.jpg" alt="">
+                </div>
+                <h4 class="name text-center">Javier Bardem</h4>
+            </div>
+        </div>
+    </section><br>
+
+    <!-- INFORMATION -->
+
+    <section class="container-fluid" id="services">
+        <div class="row">
+            <div class="col-md-2 info"></div>
+            <div class="col-md-2 info">
+                <div class="clients">250k+</div>
+                <div class="comment">HAPPY CLIENTS</div>
+            </div>
+            <div class="col-md-2 info">
+                <div class="clients">800</div>
+                <div class="comment">WEEKLY RESERVATIONS</div>
+            </div>
+            <div class="col-md-2 info">
+                <div class="clients">150</div>
+                <div class="comment">TRAVEL PARTNERS</div>
+            </div>
+            <div class="col-md-2 info">
+                <div class="clients">15</div>
+                <div class="comment">BRANCHES</div>
+            </div>
+            <div class="col-md-2 info"></div>  
+        </div>
+    </section><br>
+
+    <!-- OVERHEAD FROM TRAVELERS -->
+    <section  class="container-fluid" id="testimonial" >
+        <div class="row">
+            <h1 class="destination text-center"">OVERHEAD FROM TRAVELERS</h1>
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;height: 260px; border-bottom-width: 4px; border-bottom-color: rgb(0, 97, 142);">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(79, 107, 172);">Hotel Eucalyptus</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">in Greece </h6>
+                        <p>We booked Hotel Eucalyptus through Jay after reading a handful of reviews, and it was easily the best decision we made...<span id="dots"></span><span id="more">It is amazing place with amazing owner!</span></p>
+                        <button onclick="myFunction1()" id="myBtn">more</button>
+
+                        <script>
+                        function myFunction1() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "more"; 
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "See less"; 
+                            moreText.style.display = "inline";
+                        }
+                        }
+                        </script>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;height: 260px; border-bottom-width: 4px; border-bottom-color: rgb(0, 97, 142);">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(79, 107, 172);">Holiday Inn Resort Batam</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">in Indonesia </h6>
+                      <p>"Thanks Jay for letting me change room without charge and rebate the difference. Nice staffs Agoda and Holiday Inn!"</span></p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;height: 260px;border-bottom-width: 4px; border-bottom-color: rgb(0, 97, 142);">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(79, 107, 172);">Hotel Granvia Kyoto</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">in Japan </h6>
+                      <p>"Our family was traveling via bullet train between cities in Japan with our luggage-the location for this hotel made that<span id="dots3">...</span><span id="more3"> clear. We hope to come again in the future."</span></p>
+                      <button onclick="myFunction3()" id="myBtn3">more</button>
+                      <script>
+                        function myFunction3() {
+                        var dots = document.getElementById("dots3");
+                        var moreText = document.getElementById("more3");
+                        var btnText = document.getElementById("myBtn3");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "more"; 
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "See less"; 
+                            moreText.style.display = "inline";
+                        }
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section><br>
+    
+    <!-- CONTACT US -->
+
+    <section class="container" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="destination text-center"">CONTACTS US</h1><br>
+                <div class="container-form">
+                    <form action="processData" method="get" class="form">
+                        <div class="form-item-username" >
+                            <!-- <label for="txtName"><span class="required">*</span></label> -->
+                            <input type="text"="firstName" id="firstName" placeholder="First Name" style="height: 50px; width: 250px;">
+                            <input type="text"  ="lastName" id="lastName" placeholder="Last Name" style="height: 50px; width: 250px;">
+                            <td id="elmNameError" class="errorMsg">&nbsp;</td>
+                        </div>
+            
+                        <div class="form-item">
+                            <!-- <label for="txtEmail"><span class="required">*</span></label> -->
+                            <input type="email" name="email" id="email" placeholder="Email" style="height: 50px; width: 510px;">
+                            <td id="elmEmailError" class="errorMsg"></td>
+                        </div>
+                        
+                        <div class="form-item">
+                            <!-- <label for="txtPhone"><span class="required">*</span></label> -->
+                            <input type="mobile" name="mobile" id="mobile" placeholder="Mobile Number" style="height: 50px; width: 510px;">
+                            <td id="elmPhoneError" class="errorMsg"></td>
+                        </div>
+                        
+            
+                        <div class="accept-box">
+                            <input type="checkbox" name="accept" id="accept">
+                            <p style="margin-left: 10px; font-size: 17px; padding-top: 15px; color: gray;">Subscribe to our Newsletter</p>
+                        </div>
+            
+                        <div class="form-btns">
+                            
+                            <button class="signup" type="submit" id="btnSubmit"  >Sign Up</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 footer-info"></div>
+            <div class="col-md-2 footer-info">
+                <div class=title">HELP</div><br>
+                <div><a href="#" class="data">Help Center</a></div>
+                <div><a href="#" class="data">FAQs</a></div>
+                <div><a href="#" class="data">Terms of Use</a></div>
+            </div>
+            <div class="col-md-2 footer-info">
+                <div class="title">ABOUT US</div><br>
+                <div><a href="#" class="data">Blog</a></div>
+               <div><a href="#" class="data">Career</a></div>
+            </div>
+            <div class="col-md-2 footer-info">
+                <div class="title">DESTINATIONS</div><br>
+               <div> <a href="#" class="data">Countries</a></div>
+               <div> <a href="#" class="data">Cities</a></div>
+            </div>
+            <div class="col-md-2 footer-info">
+                <div class="title">PARTNERS WITH US</div><br>
+               <div> <a href="#" class="data">Properties</a></div>
+               <div> <a href="#" class="data">Affiliates</a></div>
+            </div>
+            <div class="col-md-1 footer-info" style="text-align: right;">
+                <div><i class="fa-solid fa-phone fa-xs" style="color: #cc610a; padding-top:30px;"></i></div>
+                <div><i class="fa-solid fa-location-dot fa-xs" style="color:#cc610a; padding-top: 60px;"></i></div>
+            </div>
+            <div class="col-md-1 footer-info" >
+                <div><a class="tel" href="tel:098765432">098765432</a></div>
+                <div><a class="tel" href="tel:098765432">098765432</a></div><br>
+                <div style="font-size: 10px;"><a class="address" href="location"></a>No.056,<br> Havlock Town,<br>Colombo 05,<br>Sri Lanka </div>
+            </div>  
+            <div class="col-md-1 footer-info"></div> 
+        </div>
+    
+        <div class="row">
+            <div class="col-md-12 text-center copyright" >
+            <p>Copyright © 2020 - SLIIT WEB DEVELOPMENT - All rights reserved</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/7063246d2d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

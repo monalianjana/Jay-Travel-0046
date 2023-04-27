@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+
+  <style>
+     .navbar-brand{
+        letter-spacing: 2px;
+        color: rgb(204, 97, 10);
+        font-size: 30px;
+        padding-top: 1px;
+        font-family: 'Carlito 700', sans-serif;
+        
+    }
+    .navbar{
+        height:50px;
+        padding-top: 0px;
+    }
+    .nav-link.active{
+        color:rgb(204, 97, 10) !important;
+        
+    }
+    .nav-link{
+        color: rgb(255, 255, 255);
+        transition:ease-in-out;
+    }
+    .navbar a:hover{
+        color: rgb(204, 97, 10);
+    }
+    .navbar a:active{
+        color: rgb(204, 97, 10);
+        
+    }
+    
+body {
+	font-family: Arial, sans-serif;
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f8cacd, #e2c7ef, #bae4ed);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f8cacd, #e2c7ef, #bae4ed);	
+}
+
+h1 {
+	text-align: center;
+}
+
+.portfolio-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+	margin: 50px;
+}
+
+.portfolio-card {
+	background-color: #030128;
+	padding: 20px;
+	text-align: center;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	margin:20px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+}
+.portfolio-card img {
+	max-width: 95%;
+	height: 250px;
+	width: 250px;
+	border-radius:50%;
+	margin-bottom: 20px;
+	box-shadow: #f8cacd 0px 0px 0px 3px, #e2c7ef 0px 0px 0px 6px, #bae4ed 0px 0px 0px 9px;
+}
+
+.portfolio-card h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color:aliceblue;
+}
+
+.portfolio-card p {
+	font-size: 11px;
+	margin-bottom: 20px;
+	color:aliceblue;
+	padding: 30px;
+}
+.egg {
+	/* Modify size here: */
+	--size: 50px;
+  
+	display: block;
+	width: var(--size);
+	height: calc(var(--size) * 1.44);
+	background-color: #333;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+  .credit a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 800;
+  }
+  
+  .credit {
+	  color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	font-family: Verdana,Geneva,Tahoma,sans-serif;
+  }
+
+
+  </style>
+
+  <body>
+    <header class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar fixed-top bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" "><b>JAY TOURS</b></a>
+                      <div class="navbar-nav" style="flex-direction: row;">
+                        <a class="nav-link ms-4"  href="index.html">HOME</a>
+                        <a class="nav-link ms-4" href="about.html">ABOUT</a>
+                        <a class="nav-link ms-4" href="services.html">SERVICES</a>
+                        <a class="nav-link ms-4" href="testimonial.html">TESTIMONIAL</a>
+                        <a class="nav-link ms-4" href="portfolio.html">PORTFOLIO</a>
+                        <a class="nav-link ms-4" href="contactus.html">CONTACTS</a>
+                      </div>
+                    </div>
+                  </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <h1>My Portfolio</h1>
+	<div class="portfolio-container">
+		<div class="portfolio-card">
+			<img src="https://pixabay.com/get/ga59d9bed36613f1150783a531ca48185e6f5d224235e1bc767d45ce5cf6b2d20a74cdb6239d283a635c8a00e59cec64fca84d238863b924af96dd7130a3be77be62af87cbaf1278c17391b996a65c203_640.jpg">
+			<h2>Sri Lanka</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor tellus at tellus tristique dapibus.</p>
+		</div>
+		<div class="portfolio-card">
+			<img src="https://pixabay.com/get/ga372610f621c7bc3adf082900bfc40cfe72d99ef7d8e1d5be18acf7abf531704e727581f4751b2615a71e13b8a5ed5c9a27dde72932a2162521dc6a214b0e0a118b3e67e66cbe55de3dc0b48df5e1a40_640.jpg">
+			<h2>Maldives</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor tellus at tellus tristique dapibus.</p>
+		</div>
+		<div class="portfolio-card">
+			<img src="https://pixabay.com/get/gcdd6f8abb756aa850f511c80e6e54abbfb3277a05809036a0ac142c09cda559cb2d05979ba7c0f4bc5a018ebbe757ffe2f921b298c81dd0ea722204139b05492643d86485eb641f2efca665856ec3768_640.jpg">
+			<h2>Rome</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor tellus at tellus tristique dapibus.</p>
+		</div>
+        <div class="portfolio-card">
+			<img src="https://pixabay.com/get/g613600eb39eaf6f7d205d279d5eb818129acfdb6faaded2e0bb01d966b6b35dfb2ef2d788aa59ecf86487a56174cd07104f4a9d48bc567cfd345f628f7ee75ca8633d1d17818338b630cbdc989d8a3e4_640.jpg">
+			<h2>Switzerland</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor tellus at tellus tristique dapibus.</p>
+		</div>
+		<div class="portfolio-card">
+			<img src="https://pixabay.com/get/gd9e8a2d21c19bfd655be8e0a804f82622a46a2d9b3b2bd44bc3d75bdaaa96616f7f62fa3241c4cd57cd264e9eba2ba87ffa0378d95383c446da6f03312a470c477102f255784c4ed07a3a20e52c06c24_640.jpg">
+			<h2>Thailand</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor tellus at tellus tristique dapibus.</p>
+		</div>
+		<div class="portfolio-card">
+			<img src="https://pixabay.com/get/gdb38cfc603530e663ca24d89ef7c398fc8468fce3cc1f1e32c228bc650335b53fbec7508932441badc0a9f24456c71755013b538793fdfdd99caff90f19df6cbb7060d55b6c6892ced5c63624f225468_640.jpg">
+			<h2>Croatia</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor tellus at tellus tristique dapibus.</p>
+		</div>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
